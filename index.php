@@ -28,9 +28,9 @@
 <body>
     <?php include_once('head.inc.php') ?>
     <main>
-            <?php
-                foreach($checkIns as $c):
-            ?>
+        <?php
+            foreach($checkIns as $c):
+        ?>
         <div class="checkIn">
             
             <img src="https://fakeimg.pl/75x75/" class="profPic">
