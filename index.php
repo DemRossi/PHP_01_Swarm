@@ -26,10 +26,7 @@
     <title>Swarm</title>
 </head>
 <body>
-    <header>
-        <img src="https://fakeimg.pl/50x50/">
-        <span class="myLocation">in <strong>Kapellen</strong></span>
-    </header>
+    <?php include_once('head.inc.php') ?>
     <main>
             <?php
                 foreach($checkIns as $c):
@@ -50,11 +47,7 @@
             endforeach;
         ?>
     </main>
-    <footer>
-        <div class="menu" id="hive"></div>
-        <div class="menu" id="list"></div>
-        <div class="menu" id="cal"></div>
-        <div class="menu" id="search"></div>
-    </footer>
+    <?php include_once('footer.inc.php') ?>
+
 </body>
 </html>
