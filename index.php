@@ -1,4 +1,22 @@
-<!DOCTYPE html>
+<?php
+        $checkIns = [
+            [
+                "username" => "Wesley Wijsen",
+                "place" => "Pool Planet",
+                "address" => "F.Rooseveltplaats"
+            ],
+            [
+                "username" => "Iemand Anders",
+                "place" => "StarBucks",
+                "address" => "Astridplein"
+            ],
+            [
+                "username" => "Boris Beer",
+                "place" => "McDonalds",
+                "address" => "Operaplein"
+            ]
+        ]
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,16 +31,24 @@
         <span class="myLocation">in <strong>Kapellen</strong></span>
     </header>
     <main>
+            <?php
+                foreach($checkIns as $c):
+            ?>
         <div class="checkIn">
+            
             <img src="https://fakeimg.pl/75x75/" class="profPic">
             <div class="dataContainer">
-                <span class="name"><strong>Wesley</strong></span><br>
-                <span class="place">Pool Planet</span><br>
-                <span class="address">F.Rooseveltplaats, Antwerpen</span><br>
+                <span class="name"><strong><?php echo $c["username"] ?></strong></span><br>
+                <span class="place"><?php echo $c["place"] ?></span><br>
+                <span class="address"><?php echo $c["address"] ?></span><br>
             </div>
             
         </div>
+        
         <hr>
+        <?php
+            endforeach;
+        ?>
     </main>
     <footer>
         <div class="menu" id="hive"></div>
